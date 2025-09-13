@@ -9,8 +9,6 @@ import App from './App.jsx';
 import Home from './Home.jsx';
 import _tasks from './tasks.jsx';
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",

@@ -8,7 +8,7 @@ function App() {
       <AppBar component="nav">
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Project 4
+            React App
           </Typography>
           <Link to={`home`} ><Button color="inherit">Home</Button></Link>
           <Link to={`tasks`}><Button color="inherit">Tasks</Button></Link>
