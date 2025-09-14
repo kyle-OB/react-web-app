@@ -1,0 +1,19 @@
+name: Deploy Backend to Render
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Deploy to Render
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.https://api.render.com/deploy/srv-d33004er433s73bdaaf0?key=7N1wtY9IPHM }}
+          api-key: ${{ secrets.rnd_GaaP0plPzYo6ATnog8nuHHLefLrk }}
